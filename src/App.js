@@ -5,6 +5,8 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Home from'./pages/home'
 import SignIn from './pages/SingIn'
 import SignUp from './pages/SignUp'
+
+
 export default function App(){
    return <>
    <Router>
