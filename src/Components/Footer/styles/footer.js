@@ -2,10 +2,11 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
-  padding: 70px 0;
+  padding: 70px 0px;
   margin: auto;
   max-width: 1000px;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.75);;
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
