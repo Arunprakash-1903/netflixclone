@@ -19,7 +19,8 @@ const handleSubmit=(e)=>{
             .createUserWithEmailAndPassword(email,password)
             .then((results)=>results.user.updateProfile({
                 displayName:firstName,
-                photoUrl:Math.floor(Math.random()*5) +1
+                photoURL:Math.floor(Math.random()*5) +1,
+              
             })).then(() => {
                 history.push(ROUTES.BROWSE);
               }).catch((error)=>{

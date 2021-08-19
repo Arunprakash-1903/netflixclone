@@ -7,10 +7,11 @@ import SignIn from './pages/SingIn'
 import SignUp from './pages/SignUp'
 import Browse from "./pages/browse"
 import {IsUserRedirect,ProtectedRoute } from './helpers/routes'
-
+import { useAuth } from './hooks'
 
 export default function App(){
-  const user=null
+  const {user}=useAuth()
+  console.log(user);
    return <>
    <Router>
 <Switch>
